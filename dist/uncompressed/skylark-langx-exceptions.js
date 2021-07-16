@@ -118,6 +118,14 @@ define('skylark-langx-exceptions/abort-exception',[
     }
     return exceptions.AbortException = AbortException;
 });
+define('skylark-langx-exceptions/format-exception',[
+    "./exceptions",
+    "./base-exception"
+],function(exceptions,BaseException){
+    class FormatException extends BaseException {
+    }
+    return exceptions.FormatException = FormatException;
+});
 define('skylark-langx-exceptions/unkown-error-exception',[
     "./exceptions",
     "./base-exception"
@@ -135,6 +143,7 @@ define('skylark-langx-exceptions/main',[
 	"./exceptions",
 	"./base-exception",
 	"./abort-exception",
+	"./format-exception",
 	"./unkown-error-exception"
 ],function(exceptions){
 	return exceptions;
