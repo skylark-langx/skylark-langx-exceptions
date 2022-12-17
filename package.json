@@ -20,6 +20,10 @@
     "langx",
     "exception"
   ],
+  "exports": {
+    ".": "./dist/uncompressed/skylark-langx-exceptions/main.js",
+    "./*": "./dist/uncompressed/skylark-langx-exceptions/*.js"
+  },
   "author": "Hudaokeji Co.,Ltd",
   "license": "MIT",
   "bugs": "https://github.com/skylarkjs/skylark/issues",
